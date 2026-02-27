@@ -9,6 +9,4 @@ router.use("/players", players);
 router.use("/years", years);
 router.use("/games", games);
 
-router.use("/test", require("./test.js"));
-
 module.exports = router;
