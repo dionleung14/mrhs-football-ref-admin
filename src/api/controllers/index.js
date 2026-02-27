@@ -7,7 +7,7 @@ const games = require("./GamesController/index.js");
 
 router.use("/players", players);
 router.use("/years", years);
-router.use("/game", games);
+router.use("/games", games);
 
 router.use("/test", require("./test.js"));
 
