@@ -14,13 +14,13 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cors());
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8081;
 
 app.use(require("./src/api/controllers"));
 
 app.get("/", (req, res) => {
   console.log("Trying to hit the slash route with a GET");
-  res.status(200).send("Server for football is working");
+  res.status(200).send("Server for football admin is working");
 });
 
 // Syncing our sequelize models and then starting our Express app
